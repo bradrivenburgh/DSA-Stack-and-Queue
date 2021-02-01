@@ -120,7 +120,7 @@ function sort(stack) {
     // Compare the last value popped from stack (temp) with the 
     // with the value at the top of tempStack; 
     // 
-    while (tempStack.top !== null && tempStack.top.data > temp) {
+    while (tempStack.top !== null && tempStack.top.data < temp) {
       stack.push(tempStack.pop());
     }
     tempStack.push(temp);
