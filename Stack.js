@@ -118,8 +118,8 @@ function sort(stack) {
     temp = stack.pop(); 
     
     // Compare the last value popped from stack (temp) with the 
-    // with the value at the top of tempStack; 
-    // 
+    // with the value at the top of tempStack; push the lesser
+    // value back to stack and the greater to tempStack
     while (tempStack.top !== null && tempStack.top.data < temp) {
       stack.push(tempStack.pop());
     }

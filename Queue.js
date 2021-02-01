@@ -1,4 +1,4 @@
-import _Node from './_Node-Queue';
+const _Node = require('./_Node-Queue');
 
 class Queue {
   constructor() {
@@ -35,4 +35,27 @@ class Queue {
   }
 }
 
-module.exports = Queue;
+function peek(queue) {
+  return queue.first.value;
+}
+
+function isEmpty(queue) {
+  return queue.first === null;
+}
+
+function display(queue) {
+  let currNode = queue.first;
+
+  while (currNode.next !== queue.last) {
+    console.log(currNode);
+    currNode = currNode.next;
+  }
+  console.log(queue.last);
+}
+
+module.exports = { 
+  Queue,
+  peek,
+  isEmpty,
+  display,
+};
