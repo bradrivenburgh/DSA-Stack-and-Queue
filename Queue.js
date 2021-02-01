@@ -43,6 +43,17 @@ function isEmpty(queue) {
   return queue.first === null;
 }
 
+function size(queue) {
+  let size = 0;
+  let currNode = queue.first;
+
+  while (currNode) {
+    size++;
+    currNode = currNode.next;
+  }
+  return size;
+}
+
 function display(queue) {
   let currNode = queue.first;
 
@@ -58,4 +69,5 @@ module.exports = {
   peek,
   isEmpty,
   display,
+  size,
 };
