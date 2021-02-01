@@ -1,4 +1,4 @@
-const {Stack, peek, isEmpty, display, is_palindrome, balancedParens} = require('./Stack');
+const {Stack, peek, isEmpty, display, is_palindrome, balancedParens, sort} = require('./Stack');
 
 function main() {
   const starTrek = new Stack();
@@ -20,7 +20,12 @@ function main() {
   return starTrek;
 }
 
-const stack = main();
+// const stack = main();
+const unsortedStack = new Stack();
+unsortedStack.push(4);
+unsortedStack.push(8);
+unsortedStack.push(1);
+unsortedStack.push(11);
 
 // console.log(stack);
 // console.log(peek(stack))
@@ -30,6 +35,7 @@ const stack = main();
 // console.log(is_palindrome("A man, a plan, a canal: Panama"));
 // console.log(is_palindrome("1001"));
 // console.log(is_palindrome("Tauhida"));
-console.log(balancedParens('()')); // true
-console.log(balancedParens('(()')); // false
-console.log(balancedParens('())')); // false
+// console.log(balancedParens('()')); // true
+// console.log(balancedParens('(()')); // false
+// console.log(balancedParens('())')); // false
+//display(sort(unsortedStack));
