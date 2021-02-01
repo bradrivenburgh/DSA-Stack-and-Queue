@@ -38,4 +38,4 @@ unsortedStack.push(11);
 // console.log(balancedParens('()')); // true
 // console.log(balancedParens('(()')); // false
 // console.log(balancedParens('())')); // false
-//display(sort(unsortedStack));
+display(sort(unsortedStack));
